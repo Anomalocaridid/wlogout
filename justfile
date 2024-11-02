@@ -3,3 +3,6 @@ _default:
 
 build:
   whiskers wlogout.tera
+
+icons:
+  ./generate_icons.sh
