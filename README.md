@@ -1,54 +1,79 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://github.com/ArtsyMacaw/wlogout">wlogout</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/template/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/template?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/catppuccin/template?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/wlogout/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/wlogout?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/wlogout/issues"><img src="https://img.shields.io/github/issues/catppuccin/wlogout?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/wlogout/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/wlogout?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+	<img src="./assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="./assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+<img src="./assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="./assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+<img src="./assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+1. Copy the contents of the desired flavor's css file to `~/.config/wlogout/style.css`.
+2. Copy the icons corresponding to the desired flavor from either [./icons/wlogout](./icons/wlogout) or [./icons/wleave](./icons/wleave) to `~/.config/wlogout/`.
+3. Copy the below text to `~/.config/wlogout/style.css` to set the icons.
+```css
+#lock {
+    background-image: url("./lock.png");
+}
+
+#logout {
+    background-image: url("./icons/logout.png");
+}
+
+#suspend {
+    background-image: url("./icons/suspend.png");
+}
+
+#hibernate {
+    background-image: url("./icons/hibernate.png");
+}
+
+#shutdown {
+    background-image: url("./icons/shutdown.png");
+}
+
+#reboot {
+    background-image: url("./icons/reboot.png");
+}
+```
 
 <!-- The FAQ section is optional. Remove if needed.-->
 ## 🙋 FAQ
 
-- Q: **_"How can I do X?"_**\
-  A: ...
+- Q: **_"Does this also work with [wleave](https://github.com/AMNatty/wleave)?"_**\
+  A: Yes, it does. In fact, there is even a set of wleave-style icons in `./icons/wleave`.
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [Anomalocaridid](https://github.com/Anomalocaridid)
 
 &nbsp;
 
