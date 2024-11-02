@@ -1,0 +1,26 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(239, 241, 245, 0.90);
+}
+
+button {
+    border-radius: 0;
+    border-color: #7287fd;
+	text-decoration-color: #4c4f69;
+    color: #4c4f69;
+	background-color: #ccd0da;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #acb0be;
+	outline-style: none;
+}
