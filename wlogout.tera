@@ -1,0 +1,33 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - flavor
+  filename: themes/{{flavor.identifier}}.css
+---
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: {{ base | mod(opacity=0.9) | css_rgba }};
+}
+
+button {
+    border-radius: 0;
+    border-color: #{{ lavender.hex }};
+	text-decoration-color: #{{ text.hex }};
+    color: #{{ text.hex }};
+	background-color: #{{ surface0.hex }};
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #{{ surface2.hex }};
+	outline-style: none;
+}
